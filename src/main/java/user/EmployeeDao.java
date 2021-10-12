@@ -73,7 +73,6 @@ public class EmployeeDao
         String fName,lName,NIC,dob,address,email,password,contact;
         int totLeaves,remLeaves,takenLeaves,empAddDB,empDelDB,postAddDB,postDelDB,postViewDB,chatSysDB,applyLeaveDB,decisionLeaveDB,salaryManageDB,customizeDataDB,editPersonalDetailsDB,giveComSugDB,viewComSugDB,viewMyAttendDB,viewAllAttendDB,viewMyLeavesDB,viewAllLeavesDB,viewMySalaryDB,viewAllSalaryDB,genReportDB;
         float basicSal,otRate;
-
         try
         {
             con = DBconn.getConnection();
@@ -119,6 +118,7 @@ public class EmployeeDao
                 viewAllSalaryDB = rs.getInt("viewAllSalary");
                 genReportDB = rs.getInt("generateReport");
 
+                
                 employee.setEmpId(empId);
                 employee.setFName(fName);
                 employee.setLName(lName);
